@@ -1,10 +1,13 @@
 import { DeviceProvider } from './device';
-import { Dripsy } from './dripsy';
+import { Dripsy } from 'app/provider/dripsy';
+import { SafeArea } from 'app/provider/safe-area';
 
 export function Provider({ children }: { children: React.ReactNode }) {
   return (
-    <DeviceProvider>
-      <Dripsy>{children}</Dripsy>
-    </DeviceProvider>
+    <SafeArea>
+      <DeviceProvider>
+        <Dripsy>{children}</Dripsy>
+      </DeviceProvider>
+    </SafeArea>
   );
 }
