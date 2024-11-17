@@ -1,5 +1,10 @@
-import { Dripsy } from './dripsy'
+import { DeviceProvider } from './device';
+import { Dripsy } from './dripsy';
 
 export function Provider({ children }: { children: React.ReactNode }) {
-  return <Dripsy>{children}</Dripsy>
+  return (
+    <DeviceProvider>
+      <Dripsy>{children}</Dripsy>
+    </DeviceProvider>
+  );
 }
