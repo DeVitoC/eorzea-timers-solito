@@ -2822,6 +2822,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-segmented-control/segmented-control@npm:^2.5.6":
+  version: 2.5.6
+  resolution: "@react-native-segmented-control/segmented-control@npm:2.5.6"
+  peerDependencies:
+    react: ">=16.0"
+    react-native: ">=0.62"
+  checksum: 084fdc0037ecea1e6592f401946030cf539f68d32d0ded46c2fa013e2a44491b07fa4fc2482a75158fb27ad174cd377472425a81a474dc00ec82f905f791a4aa
+  languageName: node
+  linkType: hard
+
 "@react-native/assets-registry@npm:^0.72.0":
   version: 0.72.0
   resolution: "@react-native/assets-registry@npm:0.72.0"
@@ -3547,6 +3557,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app@workspace:packages/app"
   dependencies:
+    "@react-native-segmented-control/segmented-control": ^2.5.6
     dripsy: ^4.3.1
     moti: latest
     solito: 4.3.0

@@ -3,6 +3,7 @@
   "name": "app",
   "main": "index.ts",
   "dependencies": {
+    "@react-native-segmented-control/segmented-control": "^2.5.6",
     "dripsy": "^4.3.1",
     "moti": "latest",
     "solito": "4.3.0"
