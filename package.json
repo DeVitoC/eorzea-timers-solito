@@ -1,5 +1,5 @@
 {
-  "name": "solito-expo-router",
+  "name": "eorzea-timers",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -14,7 +14,16 @@
   },
   "scripts": {
     "native": "cd apps/expo && yarn start",
-    "web": "cd apps/next && yarn next"
+    "web": "cd apps/next && yarn next",
+    "preview-ios": "cd apps/expo && eas build --profile preview --platform ios",
+    "preview-android": "cd apps/expo && eas build --profile preview --platform android",
+    "dev-ios": "cd apps/expo && eas build --profile development --platform ios",
+    "dev-android": "cd apps/expo && eas build --profile development --platform android",
+    "build-ios": "cd apps/expo && eas build --profile production --platform ios",
+    "build-android": "cd apps/expo && eas build --profile production --platform android",
+    "submit-ios": "cd apps/expo && eas submit -p ios --latest",
+    "submit-android": "cd apps/expo && eas submit -p android --latest",
+    "push-update": "cd apps/expo && node -- push-update-impl.js"
   },
   "resolutions": {
     "metro": "~0.76.7",
