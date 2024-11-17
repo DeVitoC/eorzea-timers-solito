@@ -1,15 +1,27 @@
 {
   "expo": {
-    "name": "solito-expo-router",
-    "slug": "solito-expo-router",
+    "name": "eorzea-timers",
+    "slug": "eorzea-timers",
     "version": "1.0.0",
-    "scheme": "solito-expo-router",
-    "platforms": ["ios", "android"],
+    "scheme": "eorzea-timers",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "ios": {
       "bundleIdentifier": "com.solito.expo-router"
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "3331a5e1-49b6-4784-8b82-9185170951c5"
+      }
+    },
+    "owner": "toolofjesus"
   }
 }
