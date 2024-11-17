@@ -5543,6 +5543,7 @@ __metadata:
     expo-linear-gradient: ~12.3.0
     expo-linking: ~5.0.2
     expo-router: ^2.0.5
+    expo-screen-orientation: ^8.0.0
     expo-splash-screen: ~0.20.5
     expo-status-bar: ~1.6.0
     react: 18.2.0
@@ -5798,6 +5799,16 @@ __metadata:
     react-native-reanimated:
       optional: true
   checksum: c45fe3d4c29c97c3b5ff8f8cda43a1918ccb35a2d38ffd82b3735fe7e92a54563982a4422960478ccdf93d5b3faa287e942aafd5159126e19d49ceca5a914ab0
+  languageName: node
+  linkType: hard
+
+"expo-screen-orientation@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "expo-screen-orientation@npm:8.0.0"
+  peerDependencies:
+    expo: "*"
+    react-native: "*"
+  checksum: 5f5fa08ae1ca1be57d784afe4334ee4ca282534762aedd89cb1a345ef547c56b56f609333d3ec4f7fa3e473ed7e02737cebc70b15e68c3aec342f93d301b82bd
   languageName: node
   linkType: hard
 
