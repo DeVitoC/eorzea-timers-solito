@@ -3,7 +3,7 @@ import { memo, useCallback, useEffect, useState } from 'react';
 import { StyleSheet } from 'react-native';
 import { TouchableButton } from 'app/features/Components/TouchableButton/TouchableButton';
 import { updateTime } from 'app/features/SharedHooks/useTime';
-// import { useRouter } from 'solito/router';
+import { useRouter } from 'solito/router';
 
 interface TimeDisplayProps {
   eorzeaTime: string;
@@ -16,7 +16,7 @@ TimeDisplay.displayName = 'TimeDisplay';
 
 const SelectCategory: React.FC = () => {
   const [eorzeaTime, setEorzeaTime] = useState<string>('');
-//   const { push } = useRouter();
+  const { push } = useRouter();
 
   const updateTimer = useCallback(() => {
     const currentEorzeaTime = updateTime();
@@ -31,7 +31,7 @@ const SelectCategory: React.FC = () => {
   }, []);
 
   const handleButtonClick = (selectedProfession: string) => {
-    // push(`/${selectedProfession}`);
+    push(`/${selectedProfession}`);
   };
 
   return (
