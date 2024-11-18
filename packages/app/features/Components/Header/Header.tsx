@@ -2,8 +2,8 @@ import { memo, useCallback, useEffect, useState } from 'react';
 import { Pressable, Text, View } from 'dripsy';
 import { useRouter } from 'solito/router';
 import { updateTime } from 'app/features/SharedHooks/useTime';
-// import ChevronLeft from 'app/assets/chevronleft.svg';
-// import { SolitoImage } from 'solito/image';
+import ChevronLeft from 'app/assets/chevronleft.svg';
+import { SolitoImage } from 'solito/image';
 
 interface TimeDisplayProps {
   eorzeaTime: string;
@@ -53,7 +53,7 @@ const Header = () => {
         }}
         onPress={() => back()}
       >
-        {/* <SolitoImage
+        <SolitoImage
           src={ChevronLeft}
           height={24}
           width={24}
@@ -61,7 +61,9 @@ const Header = () => {
           contentFit={'contain'}
           resizeMode={'contentFit'}
           onLayout={() => {}}
-        /> */}
+          transition={undefined}
+          recyclingKey={undefined}
+        />
         <Text
           sx={{
             fontSize: 16,
