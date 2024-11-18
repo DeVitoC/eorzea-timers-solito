@@ -57,9 +57,12 @@ const Header = () => {
           src={ChevronLeft}
           height={24}
           width={24}
+          style={{
+            width: 24,
+            height: 24,
+          }}
           alt="back button"
           contentFit={'contain'}
-          resizeMode={'contentFit'}
           onLayout={() => {}}
           transition={undefined}
           recyclingKey={undefined}
@@ -67,7 +70,7 @@ const Header = () => {
         <Text
           sx={{
             fontSize: 16,
-            color: '$systemBlue',
+            color: '$textBlack',
           }}
         >
           Back
