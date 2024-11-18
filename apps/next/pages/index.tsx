@@ -1,3 +1,3 @@
-import { HomeScreen } from 'app/features/home/screen'
+import SelectCategory from 'app/features/SelectCategory/SelectCategory'
 
-export default HomeScreen
+export default SelectCategory
