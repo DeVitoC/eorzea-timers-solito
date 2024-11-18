@@ -37,6 +37,11 @@ const loadNodeList = async (profession: string) => {
   //     return [];
   //   }
 
+  if (profession === 'botany') {
+    const botanyData = require('app/features/Data/botany.json');
+    nodeList = botanyData;
+  }
+
   nodeList = nodeList.sort((a: Node, b: Node) => {
     return a.name.localeCompare(b.name);
   });
