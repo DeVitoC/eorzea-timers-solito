@@ -24,22 +24,18 @@ interface Settings {
 
 const loadNodeList = async (profession: string) => {
   let nodeList: Node[] = [];
-  //   if (profession === 'botany') {
-  //     const botanyData = await import('app/features/Data/botany.json');
-  //     nodeList = botanyData.default;
-  //   } else if (profession === 'mining') {
-  //     const miningData = await import('app/features/Data/mining.json');
-  //     nodeList = miningData.default;
-  //   } else if (profession === 'fishing') {
-  //     const fishingData = await import('app/features/Data/fishing.json');
-  //     nodeList = fishingData.default;
-  //   } else {
-  //     return [];
-  //   }
 
   if (profession === 'botany') {
     const botanyData = require('app/features/Data/botany.json');
     nodeList = botanyData;
+  } else if (profession === 'mining') {
+    const miningData = require('app/features/Data/mining.json');
+    nodeList = miningData;
+  } else if (profession === 'fishing') {
+    const fishingData = require('app/features/Data/fishing.json');
+    nodeList = fishingData;
+  } else {
+    return [];
   }
 
   nodeList = nodeList.sort((a: Node, b: Node) => {
