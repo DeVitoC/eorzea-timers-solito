@@ -10,10 +10,7 @@ import SelectNodeRow from 'app/features/SelectNode/SelectNodeRow';
 import { secondsUntil } from 'app/features/SharedHooks/useTime';
 // import { SolitoImage } from 'solito/image';
 import { useDevice } from 'app/provider/device';
-
-interface SelectNodesProps {
-  profession: 'botany' | 'mining' | 'fishing';
-}
+import { SelectNodesProps } from 'app/features/SelectNode/SelectNodeTypes';
 
 interface Settings {
   searchText: string;
